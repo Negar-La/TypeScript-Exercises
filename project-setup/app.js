@@ -1,6 +1,7 @@
+"use strict";
 //unKnown Type (its better than 'any')
-var userInput;
-var userName;
+let userInput;
+let userName;
 userInput = 5;
 userInput = "Max";
 if (typeof userInput === "string") { //extra type check here
@@ -9,8 +10,8 @@ if (typeof userInput === "string") { //extra type check here
 //-------------------------------------------------------------//
 //never type
 //this func never produces a value. It crashes the script. It never returns anything.
-var func = function (msg, code) {
+const func = (msg, code) => {
     throw { message: msg, errorCode: code };
-    // while(true) { }
+    // while(true) { }  //an infinite loop that never returns!
 };
 func("An error occured", 500);

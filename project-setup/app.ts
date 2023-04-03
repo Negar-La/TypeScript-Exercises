@@ -21,3 +21,6 @@ const func = (msg: string, code: number) => {
 }
 
 func("An error occured", 500)
+
+
+//in tsconfig.json, changing target from es5 to es6 so JS will support let and const (instead of let and var)
