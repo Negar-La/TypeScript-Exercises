@@ -13,9 +13,11 @@ if (typeof userInput === "string") { //extra type check here
 //-------------------------------------------------------------//
 
 //never type
+//this func never produces a value. It crashes the script. It never returns anything.
 
 const func = (msg: string, code: number) => {
     throw {message: msg, errorCode: code}
+    // while(true) { }  //an infinite loop that never returns!
 }
 
 func("An error occured", 500)
