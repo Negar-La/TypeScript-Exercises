@@ -1,8 +1,10 @@
 "use strict";
-const btn = document.querySelector('button');
-btn.addEventListener('click', () => {
-    console.log('clicked');
-});
+const btn = document.querySelector("button");
+if (btn) {
+    btn.addEventListener("click", () => {
+        console.log("clicked");
+    });
+}
 let userInput;
 let userName;
 userInput = 5;
