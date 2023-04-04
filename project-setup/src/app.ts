@@ -1,3 +1,9 @@
+const btn = document.querySelector('button')!;
+btn.addEventListener('click', () => {
+    console.log('clicked');
+    
+})
+
 //unKnown Type (its better than 'any')
 let userInput: unknown;
 let userName: string;
