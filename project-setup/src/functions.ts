@@ -50,7 +50,7 @@ const addAndCall = (n1: number, n2: number, cb: (x: number) => void) => {
 //callback functions can return something, even if the argument on which they're passed does NOT expect a returned value.
 const sendRequest = (data: string, cb: (response: any) => void) => {
     // ... sending a request with "data"
-    return cb({data: 'Hi there!'});
+    return cb({data: 'Hi there!' + data});
   }
    
   sendRequest('Send this!', (response) => { 

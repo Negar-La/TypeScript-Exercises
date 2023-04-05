@@ -24,7 +24,7 @@ addAndCall(22, 22, (number) => {
     console.log(number);
 });
 const sendRequest = (data, cb) => {
-    return cb({ data: 'Hi there!' });
+    return cb({ data: 'Hi there!' + data });
 };
 sendRequest('Send this!', (response) => {
     console.log(response);
